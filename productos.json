@@ -1,0 +1,34 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "S.Combinado",
+            "precio": 6500
+        },
+        {
+            "id": 2,
+            "nombre": "S.Jequn",
+            "precio": 6000
+        },
+        {
+            "id": 3,
+            "nombre": "S.Lisa",
+            "precio": 6000
+        },
+        {
+            "id": 4,
+            "nombre": "S.Mikail",
+            "precio": 6000
+        },
+        {
+            "id": 5,
+            "nombre": "S.Polera Dumbo",
+            "precio": 5700
+        },
+        {
+            "id": 6,
+            "nombre": "S.Zig Zag",
+            "precio": 6500
+        }
+    ]
+}

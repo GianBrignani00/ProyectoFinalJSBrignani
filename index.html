@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>La Femme</title>
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h5 class="text-white h4">La femme</h5>
+                    <a href="#carrito"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9A9DA0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                    </svg></a>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <h1>Nuestros Productos</h1>
+    </div>
+    <main class="contenido">
+        <div class="card">
+            <img src="./images/S.Combinado.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="precio">$6.500</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <button class="btn btn-primary" data-id="1">Adquirir</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/S.Jequn.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="precio">$6.000</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <button class="btn btn-primary" data-id="2">Adquirir</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/S.Lisa.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="precio">$6.000</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <button class="btn btn-primary" data-id="3">Adquirir</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/S.Mikail.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="precio">$6.000</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <button class="btn btn-primary" data-id="4">Adquirir</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/S.Polera Dumbo.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="precio">$5.700</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <button class="btn btn-primary" data-id="5">Adquirir</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/S.Zig-Zag.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="precio">$6.500</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <button class="btn btn-primary" data-id="6">Adquirir</button>
+            </div>
+        </div>
+    </main>
+    <section>
+        <h2 id="carrito">Carrito</h2>
+        <div>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tablabody">
+                </tbody>
+            </table>
+            <h4 id="total">Total a pagar $:</h4>
+            <button id="botonFinalizarCompra" class="btn btn-primary">Finalizar compra</button>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>Todos los derechos reservados &copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/lf.js"></script>
+
+</body>
+
+</html>
