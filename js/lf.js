@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (){
     const carrito = [];
 
     const productos = [
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let botonFinalizarCompra = document.querySelector('#botonFinalizarCompra');
     botonFinalizarCompra.addEventListener('click', function () {
-        location.reload();
+        location.reload();   
     });
 
     const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
